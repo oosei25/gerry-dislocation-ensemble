@@ -1,0 +1,62 @@
+inputs:
+  # ---- North Carolina adjacency graph (used by these atlases) ----
+  - name: nc_pct21_adjacency_graph
+    url: "https://quantifyinggerrymandering.pages.oit.duke.edu/codedoc/Geo/Adjacency/NC_pct21.json"
+    dest: "data/raw/graphs/NC_pct21.json"
+
+runs:
+  # ---- Cycle Walk: gamma=0.0 (2025) ----
+  - name: nc_ush_cyclewalk_gamma0_run1
+    url: "https://sites.math.duke.edu/~jonm/Redistricting/Atlas/NC/Congressional/CycleWalk-2025/cycleWalk_v0p2_thread1_walkVSinternal_0.01.jsonl.gz"
+    dest: "data/raw/atlas/nc_ush/cyclewalk_gamma0.0/run1.jsonl.gz"
+
+  - name: nc_ush_cyclewalk_gamma0_run2
+    url: "https://sites.math.duke.edu/~jonm/Redistricting/Atlas/NC/Congressional/CycleWalk-2025/cycleWalk_v0p2_thread2_walkVSinternal_0.01.jsonl.gz"
+    dest: "data/raw/atlas/nc_ush/cyclewalk_gamma0.0/run2.jsonl.gz"
+
+  - name: nc_ush_cyclewalk_gamma0_run3
+    url: "https://sites.math.duke.edu/~jonm/Redistricting/Atlas/NC/Congressional/CycleWalk-2025/cycleWalk_v0p2_thread3_walkVSinternal_0.01.jsonl.gz"
+    dest: "data/raw/atlas/nc_ush/cyclewalk_gamma0.0/run3.jsonl.gz"
+
+  - name: nc_ush_cyclewalk_gamma0_run4
+    url: "https://sites.math.duke.edu/~jonm/Redistricting/Atlas/NC/Congressional/CycleWalk-2025/cycleWalk_v0p2_thread4_walkVSinternal_0.01.jsonl.gz"
+    dest: "data/raw/atlas/nc_ush/cyclewalk_gamma0.0/run4.jsonl.gz"
+
+  # ---- Cycle Walk: gamma=0.5 (2025) ----
+  - name: nc_ush_cyclewalk_gamma05_run1
+    url: "https://sites.math.duke.edu/~jonm/Redistricting/Atlas/NC/Congressional/CycleWalk-2025/cycleWalk_v0p2_thread1_walkVSinternal_0.01_gamma0.5.jsonl.gz"
+    dest: "data/raw/atlas/nc_ush/cyclewalk_gamma0.5/run1.jsonl.gz"
+
+  - name: nc_ush_cyclewalk_gamma05_run2
+    url: "https://sites.math.duke.edu/~jonm/Redistricting/Atlas/NC/Congressional/CycleWalk-2025/cycleWalk_v0p2_thread2_walkVSinternal_0.01_gamma0.5.jsonl.gz"
+    dest: "data/raw/atlas/nc_ush/cyclewalk_gamma0.5/run2.jsonl.gz"
+
+  - name: nc_ush_cyclewalk_gamma05_run3
+    url: "https://sites.math.duke.edu/~jonm/Redistricting/Atlas/NC/Congressional/CycleWalk-2025/cycleWalk_v0p2_thread3_walkVSinternal_0.01_gamma0.5.jsonl.gz"
+    dest: "data/raw/atlas/nc_ush/cyclewalk_gamma0.5/run3.jsonl.gz"
+
+  - name: nc_ush_cyclewalk_gamma05_run4
+    url: "https://sites.math.duke.edu/~jonm/Redistricting/Atlas/NC/Congressional/CycleWalk-2025/cycleWalk_v0p2_thread4_walkVSinternal_0.01_gamma0.5.jsonl.gz"
+    dest: "data/raw/atlas/nc_ush/cyclewalk_gamma0.5/run4.jsonl.gz"
+
+  # ---- Cycle Walk: gamma=0.5, iso=0.15 (2025) ----
+  - name: nc_ush_cyclewalk_gamma05iso015_run1
+    url: "https://sites.math.duke.edu/~jonm/Redistricting/Atlas/NC/Congressional/CycleWalk-2025/cycleWalk_v0p2_thread1_walkVSinternal_0.01_gamma0.5_iso0.15.jsonl.gz"
+    dest: "data/raw/atlas/nc_ush/cyclewalk_gamma0.5_iso0.15/run1.jsonl.gz"
+
+  - name: nc_ush_cyclewalk_gamma05iso015_run2
+    url: "https://sites.math.duke.edu/~jonm/Redistricting/Atlas/NC/Congressional/CycleWalk-2025/cycleWalk_v0p2_thread2_walkVSinternal_0.01_gamma0.5_iso0.15.jsonl.gz"
+    dest: "data/raw/atlas/nc_ush/cyclewalk_gamma0.5_iso0.15/run2.jsonl.gz"
+
+  - name: nc_ush_cyclewalk_gamma05iso015_run3
+    url: "https://sites.math.duke.edu/~jonm/Redistricting/Atlas/NC/Congressional/CycleWalk-2025/cycleWalk_v0p2_thread3_walkVSinternal_0.01_gamma0.5_iso0.15.jsonl.gz"
+    dest: "data/raw/atlas/nc_ush/cyclewalk_gamma0.5_iso0.15/run3.jsonl.gz"
+
+  - name: nc_ush_cyclewalk_gamma05iso015_run4
+    url: "https://sites.math.duke.edu/~jonm/Redistricting/Atlas/NC/Congressional/CycleWalk-2025/cycleWalk_v0p2_thread4_walkVSinternal_0.01_gamma0.5_iso0.15.jsonl.gz"
+    dest: "data/raw/atlas/nc_ush/cyclewalk_gamma0.5_iso0.15/run4.jsonl.gz"
+
+  # ---- Forest ReCom (county rule) (2021) ----
+  - name: nc_ush_forestrecom_county
+    url: "https://git.math.duke.edu/gitlab/gjh/ncanalysis2020/-/raw/e42679bcdff62a7854221bc3e9c9138766044ed0/ensembles/congressional/atlas_measureID12.jsonl.gz"
+    dest: "data/raw/atlas/nc_ush/forestrecom_county/run.jsonl.gz"

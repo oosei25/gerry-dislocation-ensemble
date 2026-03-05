@@ -27,11 +27,11 @@ Thumbs.db
 .env.*
 !.env.example
 
-# data/**
-# !data/**/.gitkeep
+data/**
+!data/**/.gitkeep
 
-# results/**
-# !results/**/.gitkeep
+results/**
+!results/**/.gitkeep
 
 *.parquet
 *.feather
@@ -39,6 +39,7 @@ Thumbs.db
 # *.csv
 *.tsv
 *.jsonl
+*.jsonl.gz
 *.geojson
 *.gpkg
 *.shp
