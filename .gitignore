@@ -32,6 +32,7 @@ data/**
 
 results/**
 !results/**/.gitkeep
+Project Plan.pdf
 
 *.parquet
 *.feather
