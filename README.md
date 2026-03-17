@@ -47,4 +47,4 @@ make lint
 
 * `configs/runs.yaml` is the source of truth for what data is used.
 * Atlas files are `.jsonl.gz` and can be streamed without manual decompression.
-* The current visible validation workflow is documented in `notebooks/00_phase1_validation.ipynb`. 
+* The current phase 1 validation workflow is documented in `notebooks/00_phase1_validation.ipynb`. 
